@@ -15,6 +15,10 @@ Abaixo a lista de materiais e softwares utilizados no projeto:
     Plataforma Wokwi;
     Plataforma HiveMQ;
     Plataforma Node Red
+    
+  ESP32
+  
+    É uma ferramenta que possibilita o controle de dispositivos interligando-os à internet por meio do Wifi. Fabricada pela Espressif, está possui um processador Xtensa Dual-Core 32-bit LX6, com até 240MHZ de velocidade, memória ROM de 448 Kbytes, memória RAM de 520 Kbytes e memória flash de 4MB, com antena embutida possui conexão WIFI de 2.4Ghz e Bluetooth BLE 4.2 BR/EDR, interface usb-serial CP2102 e regulador de tensão 3.3V AMS117. Seu firmware é baseado no RTOS, o que lhe permite fazer gerenciamento de multitarefas, além de gerenciamento dos núcleos da placa. Compatível com a IDE do Arduino torna a ESP32 uma das placas mais utilizadas para desenvolvimento de projetos de Internet das Coisas (IoT).
 
   Para atingir o objetivo proposto, o projeto foi dividido em fases:
   
@@ -41,6 +45,23 @@ Descrição da Primeira Fase:
       Btn1:2.l ligado ao r1.1;
       R1:2 ligado ao esp:GND.2;
       Btn1:1.r ligado ao esp:3V3;
+      
+    Para o acionamento do LED azul teremos o seguinte circuito:
+      Passagem de corrente do esp:3V3 para o Btn1:1.r;  
+      Ao pressionar de forma contínua o PushButton há o fechamento do circuito com passagem de corrente do 1 para 2, onde ao fe;
+      Passagem de corrente do Btn1:2.1 para o r1.1;
+      Funcionamento da resistência no resistor r.1;
+      Passagem de corrente do R1:2 para o esp:GND.2;
+      Passagem de corrente do Btn1:2.r para o esp:D13, especificada no While da programação do Esp:32 com valor 1 e consequente ativação da corrente do esp:D2 para o Led1A;
+      Passagem de corrente do Lec1C para o r2.1;
+      Passagem de corrente do r2.2 para o esp:GND.1.
+
+    Para o acionamento do sensor DHT22 teremos o seguinte circuito:
+      Passagem de corrente do esp:3V3 para o Dht1:VCC;
+      Passagem de corrente do Dht1:GND para o espGND.1;
+      Passagem de corrente do Dht1:SDA para o esp:D15, onde a cada segundo, conforme programação do While no ESP32, é enviado dados do sensor que são recebidas pelo ESP32 e interpretadas através do import dht, conforme programação do While no ESP32.
+
+
 
 Descrição da Segunda Fase:
 
