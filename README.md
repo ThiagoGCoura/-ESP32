@@ -23,7 +23,7 @@ Abaixo a lista de materiais e softwares utilizados no projeto:
     Terceira fase: Utilização do Node Red, este foi configurado para recebimento de dados e programado para o envio automático de emails;
 
 # Descrição da Primeira Fase:
-
+  ...
   1.Acessar a plataforma Worwi através do site: https://wokwi.com/ ;
   2.Selecionar a opção ESP32 + DHT22 Sensor;
   3.Adicionar o Led, os resistores e o Pushbutton clicando em Add a new part;
@@ -43,18 +43,18 @@ Abaixo a lista de materiais e softwares utilizados no projeto:
     Btn1:2.l ligado ao r1.1;
     R1:2 ligado ao esp:GND.2;
     Btn1:1.r ligado ao esp:3V3;
-    
+  ...
 # Descrição da Segunda Fase:
-
+   ...
    1.Acessar a plataforma HiveMQ através do site: http://www.hivemq.com/demos/websocket-client/ ;
    2.Clicar em conectar;
    3.Criar uma Subscriptions em Add New Topic Subscription:
    4.Criar uma Subscribe utilizando a matrícula, TIA, e o nome pessoal; 
    5.Adicionar o Topic criado ao código no Wokwi no campo MQTT_TOPIC:
    6.Adicionar o Topic criado ao código no Wokwi no campo MQTT_TOPIC:
-
+  ...
 # Descrição da Terceira Fase:
-
+  ...
  1.Instalar o Node Red: 
    1.1. Abrir o Prompt de Comando;
    1.2. Digitar o comando: npm install -g --unsafe-perm node-red;
@@ -77,3 +77,4 @@ Abaixo a lista de materiais e softwares utilizados no projeto:
    6.2. Digitar no Server smtp.office365.com;
    6.3. Digitar no Userid o email que estará enviando as notificações;
    6.4. Digitar no Password a senha do email que irá enviar as notificações, para que o Node RED tenha acesso ao envio;
+  ...
