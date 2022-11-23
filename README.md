@@ -4,6 +4,7 @@
 
   Neste Projeto foi utilizada a plataforma Wokwi para simular a montagem e funcionamento dos dispositivos utilizados, também foram utilizadas as plataformas HiveMQ, para conferir o envio e recebimento de dados, e o Node Red, para conectar o projeto à internet proporcionando o envio automatico de email. 
 Abaixo a lista de materiais e softwares utilizados no projeto:
+
     1 ESP32;
     1 Sensor DHT22;
     1 Pushbutton;
@@ -17,14 +18,17 @@ Abaixo a lista de materiais e softwares utilizados no projeto:
     Plataforma Node Red
 
   Para atingir o objetivo proposto, o projeto foi dividido em fases:
+  
     Primeira fase: utilização da ferramenta eletrônica Wokwi para simular o esquema de construção e programação do modelo proposto;
     Segunda fase: teste de envio de dados utilizando o simulador HiveMQ;
     Terceira fase: Utilização do Node Red, este foi configurado para recebimento de dados e programado para o envio automático de emails;
 
 Descrição da Primeira Fase:
+
   1.Acessar a plataforma Worwi através do site: https://wokwi.com/ ;
   2.Selecionar a opção ESP32 + DHT22 Sensor;
   3. Adicionar o Led, os resistores e o Pushbutton clicando em Add a new part;
+  
 4. Simular as ligação entre os componentes:
   4.1. Conexões do LED: 
     Led1A ligado ao esp:GND.1;
