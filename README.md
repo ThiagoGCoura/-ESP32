@@ -1,6 +1,6 @@
 #  ESP32
 
-  # Envio de dados por email usando o ESP32.
+  # Envio de Dados por Email Usando o ESP32.
 
   Neste Projeto foi utilizada a plataforma Wokwi para simular a montagem e funcionamento dos dispositivos utilizados, também foram utilizadas as plataformas HiveMQ, para conferir o envio e recebimento de dados, e o Node Red, para conectar o projeto à internet proporcionando o envio automatico de email. 
 Abaixo a lista de materiais e softwares utilizados no projeto:
@@ -26,10 +26,8 @@ Abaixo a lista de materiais e softwares utilizados no projeto:
 
   1.Acessar a plataforma Worwi através do site: https://wokwi.com/ ;
   2.Selecionar a opção ESP32 + DHT22 Sensor;
-  3. Adicionar o Led, os resistores e o Pushbutton clicando em Add a new part;
-  
-4. Simular as ligação entre os componentes:
-
+  3.Adicionar o Led, os resistores e o Pushbutton clicando em Add a new part;
+  4.Simular as ligação entre os componentes:
   4.1. Conexões do LED: 
     Led1A ligado ao esp:GND.1;
     Led1A ligado ao r2:1;
