@@ -1,6 +1,6 @@
 #  ESP32
 
-  Envio de dados por email usando o ESP32.
+  # Envio de dados por email usando o ESP32.
 
   Neste Projeto foi utilizada a plataforma Wokwi para simular a montagem e funcionamento dos dispositivos utilizados, também foram utilizadas as plataformas HiveMQ, para conferir o envio e recebimento de dados, e o Node Red, para conectar o projeto à internet proporcionando o envio automatico de email. 
 Abaixo a lista de materiais e softwares utilizados no projeto:
@@ -12,7 +12,6 @@ Abaixo a lista de materiais e softwares utilizados no projeto:
     9 Cabos Jumpers;
     1 Resistor de 150 Ohms;
     1 Resistor de 10k Ohms;
-    Notebook;
     Plataforma Wokwi;
     Plataforma HiveMQ;
     Plataforma Node Red
@@ -23,28 +22,32 @@ Abaixo a lista de materiais e softwares utilizados no projeto:
     Segunda fase: teste de envio de dados utilizando o simulador HiveMQ;
     Terceira fase: Utilização do Node Red, este foi configurado para recebimento de dados e programado para o envio automático de emails;
 
-Descrição da Primeira Fase:
+# Descrição da Primeira Fase:
 
   1.Acessar a plataforma Worwi através do site: https://wokwi.com/ ;
   2.Selecionar a opção ESP32 + DHT22 Sensor;
   3. Adicionar o Led, os resistores e o Pushbutton clicando em Add a new part;
   
 4. Simular as ligação entre os componentes:
+
   4.1. Conexões do LED: 
     Led1A ligado ao esp:GND.1;
     Led1A ligado ao r2:1;
     R2:2 ligado ao esp:D2;
+    
   4.2.Conexões do DHT22:
     Dht1:GND ligado ao espGND.1;
     Dht1:SDA ligado ao esp:D15;
     Dht1:VCC ligado ao esp:3v3
+    
   4.3. Conexões do PushButton:
     Btn1:2.r ligado ao esp:D13;
     Btn1:2.l ligado ao r1.1;
     R1:2 ligado ao esp:GND.2;
     Btn1:1.r ligado ao esp:3V3;
     
-Descrição da Segunda Fase:
+# Descrição da Segunda Fase:
+
    1.Acessar a plataforma HiveMQ através do site: http://www.hivemq.com/demos/websocket-client/ ;
    2.Clicar em conectar;
    3.Criar uma Subscriptions em Add New Topic Subscription:
@@ -52,7 +55,8 @@ Descrição da Segunda Fase:
    5.Adicionar o Topic criado ao código no Wokwi no campo MQTT_TOPIC:
    6.Adicionar o Topic criado ao código no Wokwi no campo MQTT_TOPIC:
 
-Descrição da Terceira Fase:
+# Descrição da Terceira Fase:
+
  1.Instalar o Node Red: 
    1.1. Abrir o Prompt de Comando;
    1.2. Digitar o comando: npm install -g --unsafe-perm node-red;
