@@ -30,7 +30,7 @@ Descrição da Primeira Fase:
     4.Simular as ligação entre os componentes:
     4.1. Conexões do LED: 
       Led1A ligado ao esp:GND.1;
-      Led1A ligado ao r2:1;
+      Led1C ligado ao r2:1;
       R2:2 ligado ao esp:D2;
     4.2.Conexões do DHT22:
       Dht1:GND ligado ao espGND.1;
