@@ -1,5 +1,5 @@
-//Programação basedada: Copyright (C) 2022, Uri Shaked
-//Acessavel em: https://wokwi.com/arduino/projects/322577683855704658
+# Programação basedada: Copyright (C) 2022, Uri Shaked
+# Acessavel em: https://wokwi.com/arduino/projects/322577683855704658
 
 import network
 import time
